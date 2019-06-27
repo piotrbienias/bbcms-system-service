@@ -1,0 +1,52 @@
+{
+  "name": "system-service",
+  "version": "1.0.0",
+  "description": "bbCMS System Service",
+  "scripts": {
+    "seed": "node_modules/.bin/sequelize db:seed:all",
+    "migrations": "node_modules/.bin/sequelize db:migrate",
+    "dev": "gulp",
+    "start": "gulp compile && npm run migrations && node dist/index.js"
+  },
+  "keywords": [
+    "bbcms",
+    "storage",
+    "service"
+  ],
+  "author": "Piotr Bienias",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bbcms-utils": "github:piotrbienias/bbcms-utils#master",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.8.12",
+    "sequelize-cli": "^5.5.0",
+    "typedi": "^0.8.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.0",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/uuid": "^3.4.4",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-typescript": "^5.0.1",
+    "typescript": "^3.5.2"
+  },
+  "_moduleAliases": {
+    "@system": "dist/",
+    "@utils": "node_modules/bbcms-utils/"
+  }
+}

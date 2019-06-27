@@ -1,0 +1,14 @@
+/*
+ * Author: Piotr Bienias
+ * Project: bbcms
+ * Copyright (c) 2019.
+ */
+
+const path = require('path');
+
+
+module.exports = {
+    'config':           path.resolve('dist', 'config', 'database.js'),
+    'migrations-path':  path.resolve('migrations'),
+    'seeders-path':     path.resolve('seeders')
+};

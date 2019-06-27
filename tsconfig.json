@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "lib": [
+      "es2018"
+    ],
+    "sourceMap": true,
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ],
+      "@system/*": [
+        "src/*"
+      ],
+      "@utils/*": [
+        "node_modules/bbcms-utils/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
