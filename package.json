@@ -16,7 +16,7 @@
   "author": "Piotr Bienias",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bbcms-utils": "github:piotrbienias/bbcms-utils#master",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.4",
